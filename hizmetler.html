@@ -1494,6 +1494,106 @@ div[style*="letter-spacing: .14em"] {
 .nav-lang a.active { background: #1a4480 !important; color: #fff !important; }
 .nav-book { background: #c9853a !important; color: #fff !important; }
 
+
+/* ── MOBILE FIXES ── */
+@media(max-width:768px) {
+  /* Nav always white on mobile */
+  .nav {
+    background: #ffffff !important;
+    border-bottom: 1px solid rgba(26,68,128,0.15) !important;
+    box-shadow: 0 2px 12px rgba(13,27,46,0.1) !important;
+    padding: 0 16px !important;
+    height: 60px !important;
+  }
+  .nav-logo-name { color: #0a1628 !important; font-size: 20px !important; }
+  .nav-logo-sub { color: #1a4480 !important; font-size: 8px !important; }
+  .nav-center { display: none !important; }
+  .nav-lang { display: none !important; }
+  .nav-book { display: none !important; }
+  .nav-burger { display: flex !important; }
+  .nav-burger span { background: #0a1628 !important; }
+
+  /* Mob menu */
+  .mob-menu { background: #ffffff !important; top: 98px !important; }
+  .mob-links a { color: #0a1628 !important; font-size: 24px !important; }
+  .mob-lang a { color: #0a1628 !important; border-color: rgba(26,68,128,0.2) !important; }
+  .mob-lang a.active { background: #1a4480 !important; color: #fff !important; }
+  .mob-book { background: #c9853a !important; color: #fff !important; }
+
+  /* Hero buttons on mobile */
+  .btn-ghost {
+    color: #ffffff !important;
+    border-color: rgba(255,255,255,0.6) !important;
+  }
+
+  /* Push content down for banner + nav */
+  .child-policy-banner { font-size: 10px !important; padding: 9px 12px !important; }
+  .nav { top: 38px !important; }
+  .mob-menu { top: 98px !important; }
+  .hero { padding-top: 118px !important; }
+  .page-hero { padding-top: 118px !important; }
+
+  /* WA */
+  .wa-float { bottom:16px!important; right:16px!important; width:52px!important; height:52px!important; }
+}
+@media(max-width:480px) {
+  .hero-btns { flex-direction: column; gap: 12px !important; }
+  .contact-band { grid-template-columns: 1fr !important; }
+}
+
+/* Fix ghost button on hero (dark overlay = white text needed) */
+.hero .btn-ghost,
+.page-hero + * .btn-ghost {
+  color: #ffffff !important;
+  border-color: rgba(255,255,255,0.55) !important;
+}
+.hero .btn-ghost:hover { color: #f0c070 !important; border-color: #f0c070 !important; }
+
+/* Fix loc-cta and direction buttons */
+.loc-cta { color: #1a4480 !important; border-color: rgba(26,68,128,0.3) !important; }
+a[href*="maps.google"][style*="display:inline-flex"] { color: #1a4480 !important; }
+
+
+/* ── MOBILE NAV & BUTTON FIXES ── */
+@media(max-width:768px) {
+  .nav {
+    background: #ffffff !important;
+    border-bottom: 1px solid rgba(26,68,128,0.15) !important;
+    box-shadow: 0 2px 12px rgba(13,27,46,0.1) !important;
+    padding: 0 16px !important;
+  }
+  .nav-logo-name { color: #0a1628 !important; font-size: 20px !important; }
+  .nav-logo-sub { color: #1a4480 !important; font-size: 8px !important; }
+  .nav-center, .nav-lang, .nav-book { display: none !important; }
+  .nav-burger { display: flex !important; }
+  .nav-burger span { background: #0a1628 !important; }
+  .mob-menu { background: #ffffff !important; }
+  .mob-links a { color: #0a1628 !important; }
+  .mob-lang a { color: #0a1628 !important; }
+  .mob-lang a.active { background: #1a4480 !important; color: #fff !important; }
+  .mob-book { background: #c9853a !important; color: #fff !important; }
+  .hero-btns { flex-direction: column; gap: 12px !important; }
+  .contact-band { grid-template-columns: 1fr 1fr !important; }
+  .wa-float { bottom:16px!important; right:16px!important; width:52px!important; height:52px!important; }
+}
+@media(max-width:480px) {
+  .contact-band { grid-template-columns: 1fr !important; }
+}
+
+/* Hero ghost button - white on dark photo */
+.hero .btn-ghost {
+  color: rgba(255,255,255,0.9) !important;
+  border-color: rgba(255,255,255,0.5) !important;
+}
+.hero .btn-ghost:hover { color: #f0c070 !important; border-color: #f0c070 !important; }
+
+/* Yol Tarifi Al and other location CTAs */
+.loc-cta {
+  color: #1a4480 !important;
+  border-color: rgba(26,68,128,0.3) !important;
+  font-weight: 500 !important;
+}
+
 </style>
 </head>
 <body>
