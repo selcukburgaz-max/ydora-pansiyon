@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
+
 /* ════════════════════════════════════════════════════
    YDORA LUXURY HOTEL — Main Stylesheet
    ════════════════════════════════════════════════════ */
@@ -1438,6 +1439,51 @@ div[style*="letter-spacing: .14em"] {
 .wa-float svg { width: 34px; height: 34px; fill: #fff; }
 @media(max-width:480px){ .wa-float { bottom:16px!important; right:16px!important; width:52px!important; height:52px!important; } }
 
+
+.wa-float {
+  position: fixed !important; bottom: 28px !important; right: 28px !important;
+  width: 60px !important; height: 60px !important; background: #25D366 !important;
+  border-radius: 50% !important; display: flex !important; align-items: center !important;
+  justify-content: center !important; z-index: 99999 !important;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.45) !important;
+  text-decoration: none !important; transition: transform 0.3s !important;
+}
+.wa-float:hover { transform: scale(1.12) !important; }
+.wa-float svg { width: 34px; height: 34px; fill: #fff; }
+@media(max-width:480px){ .wa-float { bottom:16px!important; right:16px!important; width:52px!important; height:52px!important; } }
+
+/* Child policy banner */
+.child-policy-banner {
+  background: linear-gradient(135deg,#1a4480 0%,#0d2d5e 100%);
+  color: #fff;
+  text-align: center;
+  padding: 11px 20px;
+  font-size: 11.5px;
+  letter-spacing: .05em;
+  line-height: 1.7;
+  border-bottom: 2px solid #c9853a;
+  position: relative;
+  z-index: 9998;
+}
+.child-policy-banner .cpb-tag {
+  background: #c9853a;
+  color: #fff;
+  font-size: 8.5px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 2px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.child-policy-banner .cpb-link {
+  color: #f0c070;
+  text-decoration: none;
+  font-size: 10px;
+  margin-left: 10px;
+  border-bottom: 1px solid rgba(240,192,112,0.4);
+}
+
 </style>
 </head>
 <body>
@@ -1468,13 +1514,7 @@ div[style*="letter-spacing: .14em"] {
   <div class="mob-lang"><a href="/index.html" class="active">TR</a><a href="/en/index.html" >EN</a></div>
   <a href="/rezervasyon.html" class="mob-book">Rezervasyon →</a>
 </div>
-<div style="background:linear-gradient(135deg,#1a4480 0%,#0d2d5e 100%);color:#fff;text-align:center;padding:12px 24px;font-size:11.5px;letter-spacing:.05em;line-height:1.7;border-bottom:2px solid #c9853a">
-  <span style="display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center">
-    <span style="background:#c9853a;color:#fff;font-size:9px;letter-spacing:.2em;text-transform:uppercase;padding:3px 10px;border-radius:2px;font-weight:600">Misafir Politikası</span>
-    <span style="color:rgba(255,255,255,0.92)">Pansiyonumuz <strong style="color:#f0c070">0-12 yaş arası çocuk misafirlere</strong> konaklama hizmeti verememektedir.</span>
-    <a href="/kvkk.html" style="color:#c9853a;text-decoration:none;font-size:10px;border-bottom:1px solid rgba(201,133,58,0.4)">Detaylı Bilgi →</a>
-  </span>
-</div>
+
 <header class="page-hero">
   <div class="page-hero-media"><img src="https://www.ydoraluxury.com/images/havuz4.jpeg" alt="Bodrum tatil rehberi" loading="eager"></div>
   <div class="page-hero-overlay" aria-hidden="true"></div>
